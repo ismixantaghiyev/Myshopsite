@@ -1,0 +1,498 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 780px;
+    background: url("/assent/images/Our-Mission-min.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    transition: 1s;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: black;
+    background-color: #74A84A;
+}
+
+.navbar {
+    z-index: 1;
+    height: 125px;
+    width: 100%;
+}
+
+.navContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 1375px; */
+    height: 125px;
+    margin: 0 auto;
+}
+
+.leftImg {
+    width: 170px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.leftImg img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rightT {
+    width: 625px;
+    height: 125px;
+}
+
+.rightT ul li a {
+    text-decoration: none;
+    color: #2c541d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rightT ul li {
+    list-style-type: none;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.rightT ul:nth-child(1) li {
+    padding-left: 30px;
+}
+
+.rightT ul {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.rightT ul i {
+    font-size: 25px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.icons1 {
+    z-index: 99090;
+    padding-left: 50px;
+}
+
+.ismixan {
+    height: 800px;
+}
+
+.text {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p {
+    color: #2c541d;
+    margin: 0;
+    font-size: 100px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    letter-spacing: 10px;
+    color: black;
+}
+
+.text button {
+    margin-top: 50px;
+    padding: 15px 35px 15px 35px;
+    border: none;
+    background-color: #74A84A;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0 0 0 inset red;
+    font-weight: 600;
+    z-index: 999;
+}
+
+.text button:hover {
+    box-shadow: 0 0 300px inset blueviolet;
+}
+
+.sec1 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    padding-top: 100px;
+
+}
+
+.boxContainer {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cartImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart {
+    width: 390px;
+    height: 450px;
+    position: relative;
+}
+
+.cartImg {
+    height: 350px;
+}
+
+.cart h1,
+p,
+span {
+    margin: 0;
+    padding: 5px;
+}
+
+.boxContainer .cart button {
+    position: relative;
+    top: -40px;
+    margin-left: 300px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.loadMore {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 720px;
+    margin-bottom: 50px;
+}
+
+.loadMore:hover {
+    background-color: #74A84A;
+    transition: .5s;
+}
+
+.sebet {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.cart:hover .sebet {
+    opacity: 1;
+}
+
+
+.soz {
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #74A84A;
+    margin-top: 8px;
+    margin-right: 5px;
+    color: white;
+}
+
+.sebet:hover .soz {
+    opacity: 1;
+}
+
+.sebet i {
+    color: #74A84A;
+    font-size: 20px;
+}
+
+.back {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+.button {
+    margin-left: 440px;
+    position: fixed;
+    border: 2px solid black;
+    padding: 5px;
+    width: 50px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+.menu {
+    z-index: 999999;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    transform: translate(100%);
+    transition: 0.5s;
+}
+
+ul li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#checkbox:checked+.menu {
+    transform: translate(0);
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.menu hr {
+    width: 600px;
+}
+
+.menu ul li a {
+    color: #74A84A;
+}
+
+.menu button {
+    right: 0;
+
+}
+
+.backq {
+    transition: 1s;
+    box-sizing: border-box;
+    width: 100%;
+    height: 720px;
+    background: linear-gradient(rgba(45, 44, 44, 0.29), rgba(45, 44, 44, 0.29)), url("/assent/images/Our-Mission-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.menu_content {
+    display: flex;
+    flex-direction: row;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+.image {
+    height: 60px;
+    width: 60px;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+}
+
+.nameProduct h3 {
+    margin: 0 0 15px 5px;
+    color: #74A84A
+}
+
+.nameProduct {
+    width: 150px;
+}
+
+.nameProduct button {
+    margin-left: 10px;
+}
+
+.nameProduct .price {
+    padding: 0;
+}
+
+.nameProduct .count {
+    padding-right: 0;
+}
+
+.removeProduct {
+    padding-top: 15px;
+}
+
+.removeProduct i {
+    font-size: 4555px;
+    color: #6a6b6a;
+    transition: 300ms;
+}
+
+.removeProduct i:hover {
+    color: #74A84A;
+
+}
+
+.menu hr {
+    width: 93%;
+    border: 1px solid #ccc;
+}
+
+.total p {
+    margin-left: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #74A84A;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.349);
+    transition: .4s;
+}
+
+.navblack {
+    background: white;
+}
+
+
+.clear {
+    width: 30%;
+    margin-left: 110px;
+    margin-top: 30px;
+    transition: 500ms;
+    cursor: pointer;
+    background-color: #74A84A;
+    color: white;
+}
+
+.clear p {
+    padding: 10px 10px 10px 25px;
+}
+
+.clear:hover {
+    background-color: #608a3d;
+}
+
+.menu_content{
+    border-bottom: 1px solid #ccc;
+}
+
+.boxSearch{
+    padding: 5px;
+    border: 1px solid #74A84A;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+
+.boxSearch::placeholder{
+    color: #74A84A;
+}
+
+
+
+
+@media only screen and (max-width: 391px) {
+    .rightT ul li a{
+        display: none;
+    }
+    .leftImg img{
+        width: 150px;
+        margin-top: -50px;
+    }
+
+    .text p{
+        margin-top: 130px;
+        font-size: 50px
+    }
+
+    .ismixan{
+        height: 60vh;
+        width: 100vw;
+    }
+
+    .text span{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text{
+        height:300px;
+    }
+
+    .text a button{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .leftImg input{
+        margin-left:-10px;
+    }
+
+    .rightT .icons1{
+        margin-left: -100px;
+        margin-top: -25px;
+    }
+
+    .icons2{
+        display: none;
+    }
+
+    .navblack2  {
+        background-color: white;
+    }
+
+    .loadMore{
+        margin-left: 150px;
+    }
+    
+
+    .menu ul li span i{
+        margin-left: 200px;
+    }
+}
+

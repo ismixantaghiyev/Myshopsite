@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/1013833292.js" crossorigin="anonymous"></script>
+    <title>EARTH STORE</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navContent">
+                <div class="leftImg">
+                    <img src="images/EARTH-STORE-300x53.png" alt="">
+                    <input class="boxSearch" placeholder="Search..." type="search" name="" id="">
+                </div>
+                <div class="rightT">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <div onclick="goster()"
+                            style="height: 50px; display: flex; align-items: center; justify-content: center;  position: relative;"
+                            class="icons1">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span class="number"
+                                style="position: absolute; top: 0; right: -10px; font-size: 18px; padding: 0 5px 0 5px; background-color: red; border-radius: 50%; color: white;">0</span>
+                        </div>
+                        <label for="checkbox" class="button">Menu</label>
+                        <div class="menu">
+                            <ul class="basketHead" style="display: flex;">
+                                <li><a href=""> Shopping Cart </a> <span onclick="hid()" style="cursor: pointer;"><i
+                                            style="font-size: 1.2em;" class="fa-solid fa-x"></i></span></li>
+                                <hr>
+                            </ul>
+                            <div class="basketInnerHTML">
+                                <!-- <div class="menu_content">
+                                    <div class="image">
+                                        <img id="img" src="images/desktop-wallpaper-backgrounds-nature-cartoon.jpg">
+                                    </div>
+                                    <div class="nameProduct">
+                                        <h3>salam</h3>
+                                        <span class="count">1x</span>
+                                        <span class="price">638$</span>
+                                    </div>
+                                    <div class="removeProduct"><i class="fa-solid fa-trash-can"></i></div>
+                                </div>
+                                <hr> -->
+                            </div>
+                            <div class="flexx">
+                                <div class="total">
+                                    <p>Subtotal: <span class="umumiMebleg" style="color: black;">0$</span><span
+                                            style="padding: 0; color: black;">$</span></p>
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <p id="rmv">Clear</p>
+                            </div>
+                        </div>
+                        <div class="icons2">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="ismixan">
+        <div class="text">
+            <p>EARTH</p>
+            <span>MULTIPURPOSE STORE</span>
+            <a href="#scroll">
+                <button>SHOP NOW</button>
+            </a>
+        </div>
+    </div>
+    <section id="scroll" class="sec1">
+        <div class="boxContainer">
+        </div>
+        <button class="loadMore">Load More</button>
+    </section>
+
+
+
+    <script src="./javascript/index.js"></script>
+    <script>
+        const section = document.querySelector(".sec1")
+        const menu = document.querySelector(".menu")
+        const body = document.querySelector('body')
+        const icons = document.querySelector('.icons1')
+
+        function goster() {
+            menu.style.right = "300px"
+            section.style.display = "none"
+        }
+        function hid() {
+            menu.style.right = "0px"
+            section.style.display = "block"
+        }
+
+    </script>
+</body>
+
+
+</html>
